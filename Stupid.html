@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>傻逼</title>
+    <style>
+        div {
+            position: relative;
+            margin: 300px auto;
+            width: 115px;
+            height: 53px;
+        }
+        span,button{
+            position: absolute;
+        }
+        span {
+            font-weight: 600;
+            color: darkred;
+        }
+        #btn1 {
+            left: 0px;
+            border-radius: 8px;
+        }
+        #btn2 {
+            right: 0px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div id="div">
+    <span>吴嘉雯是傻逼吗</span>
+    <br>
+    <button id="btn1">是</button>
+    <button id="btn2">否</button>
+</div>
+</body>
+<script type="text/javascript">
+    document.getElementById("btn1").onclick = function () {
+        alert("你很有自知之明！！！");
+    }
+    document.getElementById("btn2").onmouseenter = function () {
+        document.getElementById("btn2").textContent = "是";
+    }
+    document.getElementById("btn2").onmouseout= function () {
+        document.getElementById("btn2").textContent = "否";
+    }
+    document.getElementById("btn2").onclick = function () {
+       alert("你确实是个傻逼！！！");
+    }
+</script>
+</html>
