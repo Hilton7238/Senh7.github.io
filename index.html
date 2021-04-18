@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>傻逼</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+    <script>
+        $(function () {
+            $(".btn1").click(function () {
+                alert("你很有自之自明！！！")
+            })
+            $(".btn2").click(function () {
+                alert("你确实是个傻逼！！！")
+            })
+            $(".btn2").mouseenter(function () {
+
+                $(this).text("是");
+            })
+            $(".btn2").mouseout(function () {
+                $(this).text("否");
+            })
+        })
+    </script>
+    <style>
+        div {
+            position: relative;
+            margin: 300px auto;
+            width: 115px;
+            height: 53px;
+        }
+        span,button{
+            position: absolute;
+        }
+        span {
+            font-weight: 600;
+            color: darkred;
+        }
+        .btn1 {
+            left: 0px;
+            border-radius: 8px;
+        }
+        .btn2 {
+            right: 0px;
+            border-radius: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <span>吴嘉雯是傻逼吗</span>
+    <br>
+    <button class="btn1">是</button>
+    <button class="btn2">否</button>
+</div>
+</body>
+</html>
